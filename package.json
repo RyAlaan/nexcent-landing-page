@@ -1,0 +1,20 @@
+{
+  "name": "landing-page-nextcent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i  ./input.css -o ./public/src/main.css",
+    "watch": "tailwindcss -i  ./input.css -o ./public/src/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "jquery": "^3.7.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

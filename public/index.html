@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://kit.fontawesome.com/328128838d.js" crossorigin="anonymous"></script>
+
+    <title>Nextcent Landing Page</title>
+  </head>
+  <body class="font-inter">
+    <!-- Navbar -->
+    <nav class="container relative mx-auto p-6">
+      <div class="flex items-center justify-between">
+        <div class="pt-2">
+          <img class="w-32" src="./src/img/Logo.png" alt="" />
+        </div>
+        <div class="hidden md:flex md:space-x-6">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Feature</a>
+          <a href="#">Product</a>
+          <a href="#">Testimonial</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="hidden space-x-3.5 md:flex">
+          <a href="#" class="text-primary py-2 px-5">Login</a>
+          <a
+            href="#"
+            class="bg-shade-200 py-2 px-5 text-white rounded-md hover:bg-primary"
+            >Sign Up</a
+          >
+        </div>
+
+        <!-- Hamburger menu -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>   
+        <!-- Hamburger menu -->
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="md:hidden">
+        <div id="menu" class="absolute flex-col items-center hidden self-end bg-slate-50 text-neutral-black font-bold py-8 mt-10 space-y-2 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="#" class="w-full px-3 py-1 rounded-full text-center hover:bg-shade-200 hover:text-slate-50">Home</a>
+          <a href="#" class="w-full px-3 py-1 rounded-full text-center hover:bg-shade-200 hover:text-slate-50">Services</a>
+          <a href="#" class="w-full px-3 py-1 rounded-full text-center hover:bg-shade-200 hover:text-slate-50">Feature</a>
+          <a href="#" class="w-full px-3 py-1 rounded-full text-center hover:bg-shade-200 hover:text-slate-50">Product</a>
+          <a href="#" class="w-full px-3 py-1 rounded-full text-center hover:bg-shade-200 hover:text-slate-50">Testimonial</a>
+          <a href="#" class="w-full px-3 py-1 rounded-full text-center hover:bg-shade-200 hover:text-slate-50">FAQ</a>
+          <a href="#" class="w-full px-3 py-1 rounded-full text-center hover:bg-shade-200 hover:text-slate-50">Login</a>
+          <a href="#" class="w-full px-3 py-1 rounded-full text-center hover:bg-shade-200 hover:text-slate-50">Sign In</a>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+    </nav>
+    <!-- Navbar:END -->
+
+    <!-- Hero -->
+    <section id="hero">
+      <div
+        class="flex flex-col px-6 py-12 justify-end md:px-36 md:py-24 md:flex-row"
+      >
+        <!-- left section -->
+        <div class="flex flex-col md:w-2/3">
+          <h1
+            class="font-inter text-3xl font-extrabold text-neutral-dark md:text-5xl md:text-left xl:text-6xl"
+          >
+            Lesson And Insight
+            <span class="text-primary block">from 8 years</span>
+          </h1>
+          <p class="text-neutral-grey text-sm">
+            Where to grow your business as a photographer: site or social media?
+          </p>
+          <div class="mt-3 md:mt-5">
+            <a
+              href="#"
+              class="bg-shade-200 py-2 px-5 text-white rounded-md hover:bg-primary"
+              >Register</a
+            >
+          </div>
+        </div>
+        <!-- left section:END -->
+
+        <!-- image section -->
+        <div class="md:w-1/3 pt-10 md:pt-0">
+          <img class="m-auto w-2/3 md:w-full" src="./src/img/hero.png" alt="" />
+        </div>
+        <!-- image section:END -->
+      </div>
+    </section>
+    <!-- Hero:END -->
+
+    <!-- About -->
+    <section
+      id="about"
+      class="flex flex-col justify-center my-10 bg-slate-50 md:px-36"
+    >
+      <!-- first section -->
+      <!-- about header -->
+      <div class="">
+        <div class="flex flex-col">
+          <h4
+            class="w-full font-inter text-2xl font-extrabold text-neutral-dark text-center xl:text-4xl"
+          >
+            Our Client
+          </h4>
+          <p class="text-center text-neutral-grey">
+            We have been working with some Fortune 500+ client
+          </p>
+        </div>
+      </div>
+      <!-- about header :END-->
+
+      <!-- logo section -->
+      <div class="w-auto flex flex-row justify-around pt-5 pb-16 md:">
+        <div class="flex overflow-hidden animate-slide">
+          <img src="./src/img/client1.png" alt="" />
+          <img src="./src/img/client2.png" alt="" />
+          <img src="./src/img/client3.png" alt="" />
+          <img src="./src/img/client4.png" alt="" />
+          <img src="./src/img/client5.png" alt="" />
+          <img
+            class="hidden md:inline-block"
+            src="./src/img/client6.png"
+            alt=""
+          />
+          <img
+            class="hidden md:inline-block"
+            src="./src/img/client7.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- logo section:END -->
+      <!-- first section:END -->
+
+      <!-- second section -->
+      <!-- About Header -->
+      <div class="">
+        <div class="flex flex-col pb-4">
+          <h4
+            class="w-full font-inter text-2xl font-bold text-neutral-dark text-center xl:text-4xl"
+          >
+            Manage your entire community with in a single sistem
+          </h4>
+          <p class="text-neutral-grey text-center">
+            What is nexcent suitable for ?
+          </p>
+        </div>
+      </div>
+      <!-- About Header:END -->
+
+      <!-- Group -->
+      <div class="flex flex-col items-start justify-around md:flex-row">
+        <div class="flex flex-col items-center px-8 py-6 gap-2">
+          <div class="flex flex-col items-center">
+            <img
+              src="./src/img/icon1.png"
+              alt=""
+              class="mx-auto inline-block"
+            />
+            <h5 class="text-xl font-bold text-neutral-dark text-center">
+              Membership Organisations
+            </h5>
+          </div>
+          <div class="flex flex-row flex-start">
+            <p class="text-neutral-grey font-normal text-center">
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center px-8 py-6 gap-2">
+          <div class="flex flex-col items-center">
+            <img
+              src="./src/img/icon2.png"
+              alt=""
+              class="mx-auto inline-block"
+            />
+            <h5 class="text-xl font-bold text-neutral-dark text-center">
+              National Associations
+            </h5>
+          </div>
+          <div class="flex flex-row flex-start">
+            <p class="text-neutral-grey font-normal text-center">
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center px-8 py-6 gap-2">
+          <div class="flex flex-col items-center">
+            <img
+              src="./src/img/icon3.png"
+              alt=""
+              class="mx-auto inline-block"
+            />
+            <h5 class="text-xl font-bold text-neutral-dark text-center">
+              Clubs And Groups
+            </h5>
+          </div>
+          <div class="flex flex-row flex-start">
+            <p class="text-neutral-grey font-normal text-center">
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Group:END -->
+      <!-- second section:END -->
+    </section>
+    <!-- About:END -->
+
+    <!-- Offer Section-->
+    <section id="offer">
+      <!-- first section -->
+      <div class="flex flex-col px-6 md:justify-between md:px-36 md:flex-row">
+        <!-- image section -->
+        <div class="md:w-1/3 pb-10 md:py-5">
+          <img
+            class="m-auto w-2/3 md:w-full"
+            src="./src/img/rafiki.png"
+            alt=""
+          />
+        </div>
+        <!-- image section:END -->
+
+        <!-- desc section -->
+        <div class="flex flex-col md:w-2/3">
+          <h1
+            class="font-inter text-3xl font-semibold mb-4 text-neutral-dark md:text-4xl"
+          >
+            The unseen of spending three years at Pixelgrade
+          </h1>
+          <p class="text-neutral-grey text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+            Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+            tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+            Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+            elementum pulvinar odio
+          </p>
+          <div class="mt-3 mb-3 md:mt-5">
+            <a
+              href="#"
+              class="bg-shade-200 py-2 px-5 text-white rounded-md hover:bg-primary"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- desc section:END -->
+      </div>
+      <!-- first section:END -->
+
+      <!-- Achivment Section -->
+      <div
+        class="bg-slate-50 flex flex-col items-center justify-between py-16 px-6 md:px-36 md:flex-row md:my-12"
+      >
+        <!-- Title Section -->
+        <div class="flex flex-col">
+          <h5
+            class="text-2xl font-semibold text-neutral-dark text-center md:text-left md:text-3xl"
+          >
+            Helping a local
+            <span class="block text-primary">business reinvent itself</span>
+          </h5>
+          <p class="text-natural-black pt-2">
+            We reached here with our hard work and dedication
+          </p>
+        </div>
+        <!-- Title Section:END -->
+
+        <!-- main section -->
+        <div
+          class="flex flex-col items-center pt-3 md:pt-0 md:justify-between md:gap-y-10"
+        >
+          <div class="flex flex-col justify-stretch md:gap-x-7 md:flex-row">
+            <div class="flex gap-x-4">
+              <img class="inline-block" src="./src/img/achive1.png" alt="" />
+              <div class="flex flex-col">
+                <h5
+                  class="text-neutral-dark font-inter font-bold text-xl md:text-2xl"
+                >
+                2,245,341
+                </h5>
+                <p class="text-neutral-grey font-inter text-md md:text-lg">
+                  Members
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-x-4">
+              <img class="inline-block" src="./src/img/achive2.png" alt="" />
+              <div class="flex flex-col">
+                <h5
+                  class="text-neutral-dark font-inter font-bold text-xl md:text-2xl"
+                >
+                46,328
+                </h5>
+                <p class="text-neutral-grey font-inter text-md md:text-lg">
+                  Clubs
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:gap-x-7 md:flex-row">
+            <div class="flex items-center gap-x-4">
+              <img class="inline-block" src="./src/img/achive3.png" alt="" />
+              <div class="flex flex-col">
+                <h5
+                  class="text-neutral-dark font-inter font-bold text-xl md:text-2xl"
+                >
+                  828,867
+                </h5>
+                <p class="text-neutral-grey font-inter text-md md:text-lg">
+                  Event Bookings
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-x-4">
+              <img class="inline-block" src="./src/img/achive4.png" alt="" />
+              <div class="flex flex-col">
+                <h5
+                  class="text-neutral-dark font-inter font-bold text-xl md:text-2xl"
+                >
+                  1,926,436
+                </h5>
+                <p class="text-neutral-grey font-inter text-md md:text-lg">
+                  Payments
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main section:END -->
+      </div>
+      <!-- Achivment Section:END -->
+
+      <!-- second section -->
+      <div class="flex flex-col px-6 md:justify-between md:px-36 md:flex-row">
+        <!-- image section -->
+        <div class="md:w-1/3 pb-10 md:py-5">
+          <img class="m-auto w-2/3 md:w-full" src="./src/img/pana.png" alt="" />
+        </div>
+        <!-- image section:END -->
+
+        <!-- desc section -->
+        <div class="flex flex-col md:py-10 md:w-2/3 lg:py-16">
+          <h1
+            class="font-inter text-3xl font-semibold mb-4 text-neutral-dark md:text-4xl"
+          >
+            How to design your site footer like we did
+          </h1>
+          <p class="text-neutral-grey text-sm">
+            Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.
+          </p>
+          <div class="mt-3 mb-4 md:mt-5">
+            <a
+              href="#"
+              class="bg-shade-200 py-2 px-5 text-white rounded-md hover:bg-primary"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <!-- desc section:END -->
+      </div>
+      <!-- second section -->
+    </section>
+    <!-- Offer Section:END -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="bg-neutral-black flex flex-col justify-bertween px-3 py-4 md:py-16 md:gap-36 md:px-36 md:flex-row-reverse text-neutral-silver">
+        <!-- nav-footer -->
+        <div class="flex flex-col justify-between md:flex-start md:flex-row md:w-2/3">
+          <div class="flex flex-col gap-y-2 pt-5 md:pt-0 md:gap-y-6">
+            <h6 class="font-semibold text-lg" >Company</h6>
+            <div class="flex flex-col md:flex-start gap-y-1 md:gap-y-3">
+              <a href=""><p class="font-inter text-xs md:text-sm">About Us</p></a>
+              <a href=""><p class="font-inter text-xs md:text-sm">Blog</p></a>
+              <a href=""><p class="font-inter text-xs md:text-sm">Contact Us</p></a>
+              <a href=""><p class="font-inter text-xs md:text-sm">Pricing</p></a>
+              <a href=""><p class="font-inter text-xs md:text-sm">Testimonials</p></a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-y-2 pt-5 md:pt-0 md:gap-y-6">
+            <h6 class="font-semibold text-lg" >Support</h6>
+            <div class="flex flex-col md:flex-start gap-y-1 md:gap-y-3">
+              <a href=""><p class="font-inter text-xs md:text-sm">Help Center</p></a>
+              <a href=""><p class="font-inter text-xs md:text-sm">Terms of service</p></a>
+              <a href=""><p class="font-inter text-xs md:text-sm">Legal</p></a>
+              <a href=""><p class="font-inter text-xs md:text-sm">Privacy Policy</p></a>
+              <a href=""><p class="font-inter text-xs md:text-sm">Status</p></a>
+            </div>
+          </div>
+
+          <div class="flex flex-col flex-start pt-5 md:pt-0 gap-3">
+            <h6 class="font-semibold text-lg md:text-xl" >Stay Up To Date</h6>
+            <input class="rounded-full" type="text">
+          </div>
+        </div><!-- nav-footer:END -->
+
+        <!-- contact footer -->
+        <div class="flex flex-col flex-start gap-x-5 mt-10 md:mt-0 md:gap-10">
+          <div class="logo">
+            <img src="./src/img/Logo white.png" alt="">
+          </div>
+
+          <div class="copyright pt-5 md:pt-0">
+            <p class="font-inter text-xs md:text-sm">Copyright © 2020 Nexcent ltd.</p>
+            <p class="font-inter text-xs md:text-sm">All rights reserved</p>
+          </div>
+
+          <div class="social-media flex flex-row gap-x-4 pt-5 md:pt-0">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <!-- contact footer:END -->
+      </div>
+    </footer>
+    <!-- footer:END -->
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
